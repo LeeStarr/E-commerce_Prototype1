@@ -1,0 +1,75 @@
+/*use float to wrap teaxt around images nothing else*/
+/*flex is great for single row or single column layout */
+/*gridis better for page layouts*/
+
+/* jsutfiy will move the stuff in that container left or right or center so basically based on y axis*/
+/*alighn will move stuff up and down or center based on x axis*/
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: beige;
+}
+.navbar{
+    display: flex; /*I am saying that the contents of the nav bar must be flexed...The auto direction of the flex is row*/
+    height: 100px;
+    padding: 10px;
+    background-color: #b6c199;
+    align-items: center;;
+   
+}
+footer{
+    background-color: #b6c199;
+}
+.navbar label{
+    display: flex;
+    align-items: center;
+    flex:left;
+    width: 60%;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    color: wheat;
+    font-weight: 700;
+   
+    
+}
+.navbar ul{
+    display: flex;
+    flex: right;
+    width: 40%; 
+    justify-content: right;
+   list-style: none;
+   
+   
+}
+.navbar ul li{
+    flex:right;
+    padding-right:10px ;
+}
+
+.navbar a:hover{
+ color: wheat;
+}
+.innerField
+{
+    position: relative;
+    margin: 5px;
+    line-height: 50px;
+    display: grid;
+    gap: 1rem;
+}
+@media (min-width:50em){
+    .innerField{
+        grid-template-columns: repeat(2,1fr);/*each frame is one frcation, you can also come in and specifiy the px e.g 100px 100px 100px, which ever you prefer for as many colums as you need the sizes can differ if you want*/
+    }
+    .container:last-child{
+      color: red;
+    }
+}
+
+.SignUp input{
+    width: 50%;
+    }

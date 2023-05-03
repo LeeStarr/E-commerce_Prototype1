@@ -1,0 +1,1 @@
+CREATE TABLE `katal_tech`.`user_information` (`username` VARCHAR(125) NOT NULL , `name` VARCHAR(125) NOT NULL , `email` VARCHAR(125) NOT NULL , `cellNumber` VARCHAR(10) NOT NULL , `password` VARCHAR(125) NOT NULL , PRIMARY KEY (`username`(125)), UNIQUE (`email`(125))) ENGINE = InnoDB;
